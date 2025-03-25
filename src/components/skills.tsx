@@ -1,10 +1,10 @@
 "use client"
+/* eslint-disable react/no-unescaped-entities */
 
-import { Box, Typography, Container, Grid, LinearProgress, Paper, useTheme } from "@mui/material"
+import { Box, Typography, Container, Grid, LinearProgress, Paper } from "@mui/material"
 import { motion } from "framer-motion"
 
 export default function Skills() {
-  const theme = useTheme()
 
   const technicalSkills = [
     { name: "JavaScript/TypeScript", level: 80 },
@@ -108,7 +108,7 @@ export default function Skills() {
                       sx={{
                         height: 8,
                         borderRadius: 4,
-                        bgcolor: theme.palette.mode === "dark" ? "rgba(255, 255, 255, 0.1)" : "rgba(0, 0, 0, 0.1)",
+                        bgcolor: "rgba(0, 0, 0, 0.1)",
                         "& .MuiLinearProgress-bar": {
                           borderRadius: 4,
                         },
@@ -148,7 +148,7 @@ export default function Skills() {
                       sx={{
                         height: 8,
                         borderRadius: 4,
-                        bgcolor: theme.palette.mode === "dark" ? "rgba(255, 255, 255, 0.1)" : "rgba(0, 0, 0, 0.1)",
+                        bgcolor: "rgba(0, 0, 0, 0.1)",
                         "& .MuiLinearProgress-bar": {
                           borderRadius: 4,
                         },
@@ -178,11 +178,11 @@ export default function Skills() {
                       sx={{
                         p: 2,
                         textAlign: "center",
-                        bgcolor: theme.palette.mode === "dark" ? "rgba(255, 255, 255, 0.05)" : "rgba(0, 0, 0, 0.03)",
+                        bgcolor: "rgba(0, 0, 0, 0.03)",
                         borderRadius: 2,
                         transition: "all 0.3s ease",
                         "&:hover": {
-                          bgcolor: theme.palette.mode === "dark" ? "rgba(255, 255, 255, 0.1)" : "rgba(0, 0, 0, 0.05)",
+                          bgcolor: "rgba(0, 0, 0, 0.05)",
                           transform: "translateY(-3px)",
                         },
                       }}

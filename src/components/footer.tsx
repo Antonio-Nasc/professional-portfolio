@@ -1,4 +1,5 @@
 "use client"
+/* eslint-disable react/no-unescaped-entities */
 
 import { Box, Typography, Container, Grid, IconButton, Link, useTheme } from "@mui/material"
 import { GitHub, LinkedIn, Instagram } from "@mui/icons-material"
