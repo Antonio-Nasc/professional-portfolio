@@ -6,13 +6,11 @@ import {
   Container,
   Grid,
   Paper,
-  useTheme,
 } from "@mui/material";
 import { motion } from "framer-motion";
 import { Code, Devices, Rocket } from "@mui/icons-material";
 
 export default function About() {
-  const theme = useTheme();
 
   const features = [
     {
@@ -41,7 +39,7 @@ export default function About() {
       component="section"
       sx={{
         py: 12,
-        bgcolor: theme.palette.mode === "dark" ? "background.paper" : "grey.50",
+        bgcolor: "grey.50",
       }}
     >
       <Container maxWidth="lg">

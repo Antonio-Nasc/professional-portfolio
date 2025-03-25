@@ -12,7 +12,6 @@ import {
   Paper,
   Alert,
   Snackbar,
-  useTheme,
   AlertColor,
 } from "@mui/material";
 import { motion } from "framer-motion";
@@ -27,7 +26,6 @@ interface SnackbarState {
   severity: AlertColor;
 }
 export default function Contact() {
-  const theme = useTheme();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -206,10 +204,7 @@ export default function Contact() {
                       mb: 3,
                       p: 2,
                       borderRadius: 2,
-                      bgcolor:
-                        theme.palette.mode === "dark"
-                          ? "rgba(255, 255, 255, 0.05)"
-                          : "rgba(0, 0, 0, 0.02)",
+                      bgcolo: "rgba(0, 0, 0, 0.02)",
                     }}
                   >
                     <Box sx={{ mr: 2 }}>{info.icon}</Box>

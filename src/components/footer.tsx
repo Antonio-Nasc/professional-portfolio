@@ -1,11 +1,10 @@
 "use client"
 /* eslint-disable react/no-unescaped-entities */
 
-import { Box, Typography, Container, Grid, IconButton, Link, useTheme } from "@mui/material"
+import { Box, Typography, Container, Grid, IconButton, Link } from "@mui/material"
 import { GitHub, LinkedIn, Instagram } from "@mui/icons-material"
 
 export default function Footer() {
-  const theme = useTheme()
   const currentYear = new Date().getFullYear()
 
   const socialLinks = [
@@ -27,8 +26,8 @@ export default function Footer() {
       component="footer"
       sx={{
         py: 6,
-        bgcolor: theme.palette.mode === "dark" ? "background.paper" : "grey.900",
-        color: theme.palette.mode === "dark" ? "text.primary" : "common.white",
+        bgcolor: "grey.900",
+        color: "common.white",
       }}
     >
       <Container maxWidth="lg">
@@ -39,7 +38,7 @@ export default function Footer() {
             </Typography>
             <Typography
               variant="body2"
-              sx={{ mb: 2, color: theme.palette.mode === "dark" ? "text.secondary" : "grey.400" }}
+              sx={{ mb: 2, color: "grey.400" }}
             >
               Full Stack Developer specializing in building exceptional digital experiences.
             </Typography>
@@ -53,7 +52,7 @@ export default function Footer() {
                   rel="noopener noreferrer"
                   aria-label={link.label}
                   sx={{
-                    color: theme.palette.mode === "dark" ? "text.secondary" : "grey.400",
+                    color: "grey.400",
                     "&:hover": {
                       color: "primary.main",
                     },
@@ -76,7 +75,7 @@ export default function Footer() {
                   href={link.url}
                   underline="none"
                   sx={{
-                    color: theme.palette.mode === "dark" ? "text.secondary" : "grey.400",
+                    color: "grey.400",
                     "&:hover": {
                       color: "primary.main",
                     },
@@ -94,17 +93,17 @@ export default function Footer() {
             </Typography>
             <Typography
               variant="body2"
-              sx={{ mb: 1, color: theme.palette.mode === "dark" ? "text.secondary" : "grey.400" }}
+              sx={{ mb: 1, color: "grey.400" }}
             >
               Email: joseeantonioo2000@gmail.com
             </Typography>
             <Typography
               variant="body2"
-              sx={{ mb: 1, color: theme.palette.mode === "dark" ? "text.secondary" : "grey.400" }}
+              sx={{ mb: 1, color: "grey.400" }}
             >
               Phone: +55 (79) 99802-0511
             </Typography>
-            <Typography variant="body2" sx={{ color: theme.palette.mode === "dark" ? "text.secondary" : "grey.400" }}>
+            <Typography variant="body2" sx={{ color: "grey.400" }}>
               Location: Aracaju, Brazil
             </Typography>
           </Grid>
@@ -115,11 +114,11 @@ export default function Footer() {
             mt: 6,
             pt: 3,
             borderTop: 1,
-            borderColor: theme.palette.mode === "dark" ? "divider" : "grey.800",
+            borderColor: "grey.800",
             textAlign: "center",
           }}
         >
-          <Typography variant="body2" sx={{ color: theme.palette.mode === "dark" ? "text.secondary" : "grey.400" }}>
+          <Typography variant="body2" sx={{ color: "grey.400" }}>
             © {currentYear} José Nascimento. All rights reserved.
           </Typography>
         </Box>

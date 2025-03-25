@@ -12,7 +12,6 @@ import {
   CardActions,
   Button,
   Chip,
-  useTheme,
   Dialog,
   DialogTitle,
   DialogContent,
@@ -36,7 +35,6 @@ interface Project {
   fullDescription: string;
 }
 export default function Projects() {
-  const theme = useTheme();
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
   const projects = [
@@ -80,7 +78,7 @@ export default function Projects() {
       component="section"
       sx={{
         py: 12,
-        bgcolor: theme.palette.mode === "dark" ? "background.paper" : "grey.50",
+        bgcolor: "grey.50",
       }}
     >
       <Container maxWidth="lg">
