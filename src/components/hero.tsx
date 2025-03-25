@@ -1,7 +1,7 @@
 "use client"
 /* eslint-disable react/no-unescaped-entities */
 
-import { Box, Typography, Button, Container, Grid, useTheme, IconButton } from "@mui/material"
+import { Box, Typography, Button, Container, Grid, IconButton } from "@mui/material"
 import { motion } from "framer-motion"
 import { ArrowDownward } from "@mui/icons-material"
 import perfil from "../asset/image/perfl.jpg"
