@@ -7,7 +7,6 @@ import perfil from "../asset/image/perfl.jpg"
 import Image from 'next/image'
 
 export default function Hero() {
-  const theme = useTheme()
 
   return (
     <Box

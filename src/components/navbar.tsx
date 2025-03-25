@@ -1,12 +1,11 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useState } from "react"
 import {
   AppBar,
   Toolbar,
   Typography,
   Button,
-  IconButton,
   Box,
   Drawer,
   List,
@@ -26,10 +25,7 @@ const navItems = [
 
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false)
-  const [scrolled, setScrolled] = useState(false)
   const isMobile = useMediaQuery("(max-width:768px)")
-
-
 
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen)
