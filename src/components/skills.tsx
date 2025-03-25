@@ -12,6 +12,7 @@ export default function Skills() {
     { name: "React.js", level: 70 },
     { name: "Next.js", level: 65 },
     { name: "Node.js", level: 30 },
+    { name: "Docker", level: 30 },
     { name: "SQL Server/My SQL", level: 50 },
     { name: "HTML/CSS", level: 90 },
     { name: "Tailwind", level: 70 },
@@ -171,7 +172,7 @@ export default function Skills() {
                 Tools & Platforms
               </Typography>
               <Grid container spacing={2}>
-                {["Git", "GitHub", "GitLab", "VS Code", "Vercel", "Figma"].map((tool, index) => (
+                {["Git", "GitHub", "GitLab", "Docker", "VS Code", "Vercel", "Figma"].map((tool, index) => (
                   <Grid item xs={6} sm={4} key={index}>
                     <Box
                       sx={{

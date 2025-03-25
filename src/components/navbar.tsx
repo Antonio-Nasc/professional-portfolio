@@ -15,8 +15,6 @@ import {
   useMediaQuery,
   Container,
 } from "@mui/material"
-import { Menu as MenuIcon, LightMode, DarkMode } from "@mui/icons-material"
-import { useTheme } from "next-themes"
 
 const navItems = [
   { name: "Home", href: "#home" },
@@ -29,31 +27,12 @@ const navItems = [
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
-  const [mounted, setMounted] = useState(false)
-  const { theme, setTheme } = useTheme()
   const isMobile = useMediaQuery("(max-width:768px)")
 
-  useEffect(() => {
-    setMounted(true)
 
-    const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setScrolled(true)
-      } else {
-        setScrolled(false)
-      }
-    }
-
-    window.addEventListener("scroll", handleScroll)
-    return () => window.removeEventListener("scroll", handleScroll)
-  }, [])
 
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen)
-  }
-
-  const toggleTheme = () => {
-    setTheme(theme === "dark" ? "light" : "dark")
   }
 
   const drawer = (
@@ -90,8 +69,8 @@ export default function Navbar() {
       position="fixed"
       color="default"
       sx={{
-        boxShadow: scrolled ? 1 : 0,
-        bgcolor: scrolled ? "background.paper" : "transparent",
+        boxShadow:  0,
+        bgcolor:  "transparent",
         transition: "all 0.3s ease",
       }}
     >
